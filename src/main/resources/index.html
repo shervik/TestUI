@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="POST" class="form" id="main-form">
+    <h1 id="head"></h1>
+    <input type="text" class="main_input" name="name" required placeholder="Ваше имя">
+    <input type="email" class="main_input" name="email" required placeholder="Email">
+    <input type="password" class="main_input" name="password" required placeholder="Пароль">
+    <input type="password" class="main_input" name="password_retry" required placeholder="Повторите пароль">
+    <label for="male"><input type="radio" id="male" name="sex" value="male">Мужской</label>
+    <label for="female"><input type="radio" id="female" name="sex" value="female">Женский</label>
+    <select name="level" id="select_level" style="margin:5px;">
+        <option>Выберите уровень сложности...</option>
+        <option value="1">Сложный</option>
+        <option value="2">Средний</option>
+        <option value="3">Лёгкий</option>
+    </select>
+    <label for="checkbox"><input type="checkbox" id="checkbox" checked>Участвовать в выполнении ДЗ</label>
+    <label for="spam"><input type="checkbox" name="spam" id="spam">Получать спам</label>
+    <input type="submit" class="main_input" style="margin-top: 20px;" id="submit" value="Отправить на обработку">
+</form>
+
+<script src="./script.js"></script>
+</body>
+</html>
